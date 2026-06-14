@@ -179,7 +179,9 @@ export default function MitjulLanding() {
           <nav className="nav-links">
             <a href="#features">기능</a>
             <a href="#how">사용법</a>
-            <a href="#signup" className="btn btn-primary btn-sm">베타 신청</a>
+            <a href="#signup">베타 신청</a>
+            <a href="/auth/login">로그인</a>
+            <a href="/auth/sign-up" className="btn btn-primary btn-sm">시작하기</a>
           </nav>
           <button className="menu-btn" aria-label="메뉴 열기" onClick={() => setOpen(!open)}>
             {open ? <X size={24} /> : <Menu size={24} />}
@@ -190,6 +192,8 @@ export default function MitjulLanding() {
             <a href="#features" onClick={() => setOpen(false)}>기능</a>
             <a href="#how" onClick={() => setOpen(false)}>사용법</a>
             <a href="#signup" onClick={() => setOpen(false)}>베타 신청</a>
+            <a href="/auth/login" onClick={() => setOpen(false)}>로그인</a>
+            <a href="/auth/sign-up" onClick={() => setOpen(false)}>시작하기</a>
           </div>
         )}
       </header>
